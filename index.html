@@ -3,66 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title> DoiLink </title>
-    <style>
-    body{
-      background-color: rgb(255, 255, 255);
-    }
-    .logo {
-        width: 500px;
-        height: 200px;
-        background: url(logo.png);
-        background-size: contain;
-        margin: 100px auto 0 auto;
-    }
-    #app {
-      width: 700px;
-      margin: 30px auto;
-    }
-    #app>div {
-      border: 1px rgba(223,225,229,0) solid;
-      border-radius: 25px;
-      box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-      box-sizing: border-box;
-      padding:5px 5px 5px 10px;
-    }
-    #app input {
-      width: 570px;
-      height: 35px;
-      padding-left: 20px ;
-      border: 0px red solid;
-      outline: none;
-      font-size: 18px;
-    }
-    button[type=submit] {
-      height: 30px;
-      width: 100px;
-      font-size: 18px;
-      border: 1px rgba(223,225,229,0) solid;
-      border-radius: 10px;
-      margin: 5px auto;
-    }
-    button[type=submit]:hover {
-      background-color: rgb(200, 200, 200);
-    }
-
-    #copypad {
-      width: 700px;
-      height: 300px;
-      margin: 10px auto;
-      border: 1px rgba(223,225,229,0) solid;
-      border-radius: 10px;
-      box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-      box-sizing: border-box;
-      background-color: rgb(240, 240, 240);
-      padding:5px 5px 5px 10px;
-      font-size: 18px;
-    }
-
-    #copybutton {
-      margin-left: 260px;
-      width: 200px;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
 
     <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -79,6 +20,7 @@
     </div>
     <textarea id="copypad""></textarea>
     <button type="submit" id="copybutton" data-clipboard-target="#copypad">Copy to ClipBoard</button> <span id="flag"> &#127919;</span>
+    <p class="hyperlink"> <span class="emoji">&#9971; </span> <a href="doi-bibliography.html" >Doi to Bibliography</a> </p>  
     
   </div>
 
